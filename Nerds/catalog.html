@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <a href="index.html"><img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс" width="160" height="65"></a>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="current-page" href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li> 
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main class="container">
+      <section class="filters clearfix">
+        <form action="#" method="get">
+          <div class="filter-box">
+            <h3>Стоимость:</h3>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="width: 70%;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="15 000"></label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-box">
+            <h3>Сетка:</h3>
+            <input type="radio" name="grid-choice" id="adaptive-grid-field" value="adaptive" checked>
+            <label for="adaptive-grid-field">Адаптивная</label>
+            <input type="radio" name="grid-choice" id="fixed-grid-field" value="fixed" disabled>
+            <label for="fixed-grid-field">Фиксированная</label>
+            <input type="radio" name="grid-choice" id="elastic-grid-field" value="elastic">
+            <label for="elastic-grid-field">Резиновая</label>
+          </div>
+          <div class="filter-box">
+            <h3>Особенности:</h3>
+            <input type="checkbox" name="features-choice" id="slider-field" value="slider" disabled>
+            <label for="slider-field">Слайдер</label>
+            <input type="checkbox" name="features-choice" id="advantages-unit-field" value="advantages-unit">
+            <label for="advantages-unit-field">Блок преимуществ</label>
+            <input type="checkbox" name="features-choice" id="news-field" value="news">
+            <label for="news-field">Новости</label>
+            <input type="checkbox" name="features-choice" id="gallery-field" value="gallery">
+            <label for="gallery-field">Галерея</label>
+            <input type="checkbox" name="features-choice" id="basket-field" value="basket">
+            <label for="basket-field">Корзина</label>
+          </div>
+          <input class="btn" type="submit" value="Показать">
+        </form>
+      </section>
+      <section class="gallery">
+        <div class="sorting-filters">
+          <h3>Сортировать:</h3>
+          <a>По цене</a>
+          <a>По типу</a>
+          <a>По названию</a>
+          <a>По убыванию</a>
+          <a>По возрастанию</a>
+        </div>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/sedona-preview.jpg" alt="Седона превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href=#>Sedona</a>
+            <p>Информационный сайт<br>для туристов</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/pink-preview.jpg" alt="Пинк превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href="#">Pink app</a>
+            <p>Продуктовый лендинг<br>приложения для IOS и Android</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/borodinski-preview.jpg" alt="Бородинский превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href="#">Barbershop</a>
+            <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/mishka-preview.jpg" alt="Мишка превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href="">Mishka</a>
+            <p>Интернет-магазин<br>вязаных игрушек</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/aplus-preview.jpg" alt="А-плюс превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href="#">A plus</a>
+            <p>Лендинг курсов повышения<br>квалификации</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+        <article class="gallery-card">
+          <div class="mac-head"></div>
+          <div class="shadow"><img src="img/kvast-preview.jpg" alt="Кваст превью" width="360" height="576"></div>
+          <div class="buy-block">
+            <a href="#">Кваст</a>
+            <p>Промо-сайт производителя<br>крафтового кваса</p>
+            <button class="btn">9 900 руб.</button>
+          </div>
+        </article>
+      </section>
+      <div class="pagination">
+        <a class="page-number" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Следующая</a>
+      </div>
+    </main>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461636648!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487736581834" width="1440" height="417" style="border:0" allowfullscreen></iframe>
+        <div class="contacts">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8</p>
+          <a class="tel" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+          <a class="btn js-feedback" href="writeus.html">Напишите нам</a>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="discount">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Напишите нам</h2>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="get">
+        <div class="username-block">
+          <label for="username-field">Ваше имя:</label>
+          <input class="username" type="text" name="username" id="username-field" value="Представьтесь, пожалуйста">
+        </div>
+        <div class="email-block">
+          <label for="email-field">Ваш e-mail:</label>
+          <input class="email modal-error" type="text" name="email" id="email-field" value="Для отправки ответа">
+        </div>
+        <label for="text-area">Текст письма:</label>
+        <textarea name="text" id="text-area">В свободной форме</textarea>
+        <button class="btn">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="js/popup.min.js"></script>
+  </body>
+</html>
