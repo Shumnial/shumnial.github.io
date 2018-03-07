@@ -1,0 +1,80 @@
+.advantages {
+  margin-bottom: 55px;
+  @media @tablet {
+    padding: 40px 0;
+  }
+}
+
+.advantages__wrapper {
+  .container();
+  padding-top: 1px;
+}
+
+.advantages__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 27px;
+  margin-bottom: 9px;
+
+  @media @tablet {
+    font-size: 43px;
+  }
+}
+
+.advantages__list {
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+    max-height: 460px;
+  }
+}
+
+.advantages__item {
+  padding-top: 78px;
+  margin-bottom: 5px;
+
+  &--ecology {
+    background: url("../img/icon-feature-1.svg") no-repeat;
+    background-position: 9px 23px;
+    margin-right: 84px;
+  }
+
+  &--price {
+    background: url("../img/icon-feature-3.svg") no-repeat;
+    background-position: 0px 24px;
+  }
+
+  &--likes {
+    background: url("../img/icon-feature-5.svg") no-repeat;
+    background-position: 8px 29px;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-2.svg") no-repeat;
+    background-position: 3px 26px;
+    padding-top: 77px;
+  }
+
+  &--support {
+    background: url("../img/icon-feature-4.svg") no-repeat;
+    background-position: 0px 28px;
+  }
+
+  &--gift-box {
+    background: url("../img/icon-feature-6.svg") no-repeat;
+    background-position: 3px 26px;
+  }
+
+  @media @tablet {
+    width: 50%;
+  }
+}

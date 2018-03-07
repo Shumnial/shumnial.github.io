@@ -1,0 +1,125 @@
+.section-choice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 487px;
+  background: url(../img/hero-mobile@1x.jpg) #f9f9f9 no-repeat;
+  background-position:50% -16%;
+  padding-top: 1px;
+
+  @media @tablet {
+    min-height: 745px;
+    background: url(../img/hero-desktop@1x.jpg) #f9f9f9 no-repeat;
+    background-position: 50% 100%;
+  }
+
+  @media @desktop {
+    min-height: 746px;
+    background-position: left 50% bottom 50%;
+  }
+}
+
+.section-choice__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 68px;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 49px;
+    width: 100%;
+  }
+}
+
+
+.section-choice__list {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @media @desktop {
+    width: 1050px;
+  }
+}
+
+.section-choice__list::after {
+
+  @media @tablet {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 23px;
+    bottom: -4px;
+    left: 0px;
+    background: url("../img/bg-zigzag-fill.svg") center;
+    background-size: auto 23px;
+  }
+
+  @media @desktop {
+    height: 36px;
+    background-size: auto 36px;
+  }
+}
+
+.section-choice__item {
+  display: flex;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding-top: 26px;
+  padding-left: 29px;
+  padding-right: 115px;
+  padding-bottom: 29px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+
+  &--interier {
+    background-color: #63d1bb;
+    background-image: url(../img/icon-interior.svg);
+    background-repeat: no-repeat;
+    background-position: right 36px top 30px;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+    background-image: url(../img/icon-toy.svg);
+    background-repeat: no-repeat;
+    background-position: right 34px top 31px;
+  }
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-left: 36px;
+    padding-bottom: 31px;
+    padding-right: 130px;
+  }
+
+  @media @desktop {
+    padding-right: 320px;
+  }
+}
+
+.section-choice__item:hover {
+  @media @tablet {
+    transform: translateY(-10px);
+    transition-property: transform;
+  }
+}
+
+.section-choice__item:active {
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo main-nav__logo--mobile">
+            <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
+          </div>
+        <div class="main-nav__logo main-nav__logo--tablet">
+          <a href="index.html"><img src="img/logo-tablet.svg" width="112" height="46" alt="Мишка"></a>
+          </div>
+          <button class="main-nav__toggler">Меню</button>
+          <ul class="main-nav__list hidden">
+            <ul class="main-nav__goods">
+              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            </ul>
+            <div class="main-nav__logo main-nav__logo--desktop">
+            <a href="index.html"><img src="img/logo-desktop.svg" width="151" height="72" alt="Мишка"></a>
+          </div>
+            <ul class="main-nav__help">
+              <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--basket"><a href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <ul class="main-nav__deals">
+              <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a href="#">Распродажа</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__title page-header__title--catalog">
+        <h1>Каталог товаров</h1>
+      </div>
+    </header>
+    <main>
+      <section class="catalog-list">
+        <div class="catalog-list__wrapper">
+          <article class="catalog-list__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+            </picture>
+            <div class="catalog-list__item-wrapper">
+              <h3 class="catalog-list__item-name">Зайчик-попрыгайчик</h3>
+              <p class="catalog-list__item-parameters">Рост 30 см, вес 200 г</p>
+              <span class="catalog-list__item-price">1 200 руб.</span>
+            </div>
+          </article>
+          <article class="catalog-list__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg"  srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
+            <div class="catalog-list__item-wrapper">
+              <h3 class="catalog-list__item-name">Корзинка для белья</h3>
+              <p class="catalog-list__item-parameters">Диаметр 15 см, высота 10 см</p>
+              <span class="catalog-list__item-price">690 руб.</span>
+            </div>
+          </article>
+          <article class="catalog-list__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg"  srcset="img/photo-3-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
+            <div class="catalog-list__item-wrapper">
+              <h3 class="catalog-list__item-name">Большая корзинка для игрушек</h3>
+              <p class="catalog-list__item-parameters">Диаметр 30 см, высота 30 см</p>
+              <span class="catalog-list__item-price">1 500 руб.</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a class="social-links__link social-links__link--inst" href="#"></a>
+            <a class="social-links__link social-links__link--fb" href="#"></a>
+            <a class="social-links__link social-links__link--twitter" href="#"></a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <p>Разработано</p>
+          <a class="page-footer__copyright-link" href="#"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/toggle.js"></script>
+  </body>
+</html>
