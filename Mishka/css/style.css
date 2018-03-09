@@ -1419,6 +1419,7 @@ img {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    margin-bottom: 70px;
   }
 }
 .catalog-list__item {
