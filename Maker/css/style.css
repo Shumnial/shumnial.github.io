@@ -1,19 +1,19 @@
 /* FONTS */
  @font-face {
      font-family: "Raleway";
-     src: url("../fonts/Raleway/Raleway-Thin.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Thin.woff") format("woff");
+     src: url("/fonts/Raleway/Raleway-Thin.woff2") format("woff2"), url("/fonts/Raleway/Raleway-Thin.woff") format("woff");
      font-style: normal;
      font-weight: 100;
 }
  @font-face {
      font-family: "Raleway";
-     src: url("../fonts/Raleway/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Black.woff") format("woff");
+     src: url("/fonts/Raleway/Raleway-Black.woff2") format("woff2"), url("/fonts/Raleway/Raleway-Black.woff") format("woff");
      font-style: normal;
      font-weight: 900;
 }
  @font-face {
      font-family: "Yantramanav";
-     src: url("../fonts/Yantramanav/Yantramanav-Black.woff2") format("woff2"), url("../fonts/Yantramanav/Yantramanav-Black.woff") format("woff");
+     src: url("/fonts/Yantramanav/Yantramanav-Black.woff2") format("woff2"), url("/fonts/Yantramanav/Yantramanav-Black.woff") format("woff");
      font-style: normal;
      font-weight: 900;
 }
