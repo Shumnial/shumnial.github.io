@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:West Asia Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0500
+TZOFFSETTO:+0500
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20190426T071616Z
+DESCRIPTION:Пожалуйста\, убедитесь\, что ваша р
+	егистрация подтверждена. \nБольше о меро
+	приятии http://artoftransformation.ru/ \n\n
+DTEND;TZID="West Asia Standard Time":20190529T180000
+DTSTAMP:20190426T032700Z
+DTSTART;TZID="West Asia Standard Time":20190529T140000
+LAST-MODIFIED:20190426T071616Z
+LOCATION:Музей русского импрессионизма (Лени
+	нградский проспект 15\, стр.11)
+SEQUENCE:0
+SUMMARY;LANGUAGE=ru:Саммит Microsoft “Искусство транс
+	формации”.
+TRANSP:OPAQUE
+UID:7926941494
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 16.0.11425.20214">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted
+	 from text/plain format -->\n\n<P>Пожалуйста\, убедитес
+	ь\, что ваша регистрация подтверждена.\n\n<
+	BR>Больше о мероприятии <A HREF="http://artoftransformat
+	ion.ru/">http://artoftransformation.ru/</A>\n</P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+END:VCALENDAR
