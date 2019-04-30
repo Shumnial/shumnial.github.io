@@ -1,1 +1,0 @@
-{"version":3,"sources":["common.js"],"names":["$","AOS","init","offset"],"mappings":"aAAAA,EAAE,WACAC,IAAIC,KAAK,CADTC,OAAA,GACAF,QAAS,SACPE,MAAQ","file":"../sources/common.js","sourcesContent":["$(() => {\r\n  AOS.init({\r\n    offset: 25,\r\n    'disable': 'tablet',\r\n    'once': true\r\n  });\r\n});"]}
