@@ -1,0 +1,27 @@
+.social {
+
+  &__list {
+    display: flex;
+  }
+  
+  &__item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: @primary-600;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: lighten(@primary-600, 10%);
+    }
+  }
+}

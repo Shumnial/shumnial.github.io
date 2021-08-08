@@ -19,8 +19,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="./images/logo.svg" alt="">
+          </a>
+          <button class="header__burger burger">
+            <div class="burger__line"></div>
+          </button>
+          <nav class="header__nav">
+            <a class="header__nav-item" href="#about">Об&nbsp;олимпиаде</a>
+            <a class="header__nav-item" href="#participants">Участникам</a>
+            <a class="header__nav-item" href="#steps">Этапы</a>
+            <a class="header__nav-item" href="#preparation">Подготовка</a>
+            <a class="header__nav-item" href="#to-mentors-and-teachers">Наставникам</a>
+            <a class="header__nav-item" href="#to-mentors-and-teachers">Учителям</a>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-
       <section class="hero">
         <div class="container">
           <div class="hero__row">
@@ -34,7 +53,8 @@
                 <p class="hero__subtitle">Кружкового движения НТИ</span>
               </div>
                 <div class="hero__footer">
-                  <a href="#" class="hero__btn btn">Зарегистрироваться</a>
+                  <a href="#" class="hero__btn btn" target="_blank">Зарегистрироваться</a>
+                  <p class="hero__start">Стартуем 1&nbsp;сентября 2021, но&nbsp;стать участником можно уже&nbsp;сейчас</p>
                 </div>
             </div>
           </div>
@@ -78,13 +98,60 @@
         </div>
       </section>
 
+      <section class="section about" id="about">
+        <div class="container">
+          <h2 class="h2">Об&nbsp;олимпиаде</h2>
+          <p class="about__subtitle">Олимпиада кружкового движения НТИ&nbsp;&mdash; это&nbsp;командные инженерные соревнования для&nbsp;школьников и&nbsp;студентов, увлечённых современными технологиями, инженерией и&nbsp;естественными науками.</p>
+          <div class="about__row">
+            <div class="about__count">
+              <p class="about__count-number">30</p>
+              <div class="about__count-icon">
+                <img src="./images/icon-plus.svg" alt="">
+                <span>профилей</span>
+              </div>
+            </div>
+            <div class="about__icons">
+              <img src="./images/about_icons.svg" alt="">
+            </div>
+          </div>
+          <div class="about__panel">
+            <p>Информация про все профили олимпиады</p>
+            <a href="#" class="btn btn--hollow" target="_blank">Больше про&nbsp;профили</a>
+          </div>
+        </div>
+      </section>
+
       <section class="past-olympiad" id="past-olympiad">
         <a class="past-olympiad__btn" href="http://media.w3.org/2010/05/sintel/trailer.mp4" data-fancybox>Посмотри как&nbsp;проходила олимпиада в&nbsp;прошлом году</a>
       </section>
       <div class="container">
 
-        <section class="section participants">
-          <h2 class="h2">Кто может быть участником олимпиады</h2>
+        <section class="section features">
+          <div class="features__row">
+            <div class="features__item">
+              <div class="features__item-stage">
+                <img class="features__item-img" src="./images/win.png" alt="">
+              </div>
+              <div class="features__item-content">
+                <h3 class="h3">Победа в&nbsp;олимпиаде дает преимущества для поступления</h3>
+                <p>45% опрошенных победителей Олимпиады Кружкового движения НТИ прошлых лет поступили в&nbsp;вузы из&nbsp;первой десятки в&nbsp;рейтингах лучших вузов страны: Университет ИТМО, МФТИ, МГТУ им. Баумана, НИЯУ МИФИ</p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="features__item-stage">
+                <img class="features__item-img" src="./images/target.png" alt="">
+              </div>
+              <div class="features__item-content">
+                <h3 class="h3">Цель олимпиады</h3>
+                <p>Выявить молодых людей, готовых предложить новые ответы на&nbsp;актуальные технологические вызовы</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="section participants" id="participants">
+          <h2 class="participants__title h2">Кто может быть<br>участником олимпиады</h2>
           <div class="participants__row">
             <div class="participants__item participant-card">
               <img src="./images/icon-punched-card1.svg" alt="" class="participant-card__icon">
@@ -125,70 +192,76 @@
                 <div class="participant-cta__feature">100 баллов за&nbsp;ЕГЭ</div>
                 <div class="participant-cta__feature">Практика и&nbsp;трудоустройство</div>
               </div>
-              <a href="#" class="btn participant-cta__btn">Зарегистрироваться</a>
+              <a href="#" class="btn participant-cta__btn" target="_blank">Зарегистрироваться</a>
             </div>
           </div>
         </section>
 
-        <section class="section steps">
+        <section class="section steps" id="steps">
           <h2 class="h2 steps__title">Этапы олимпиады</h2>
           <div class="steps__row">
-            <div class="steps__item">
+            <div class="steps__item step">
               <div class="steps__item-img">
-                <img src="images/individual.png" alt="">
+                <img src="./images/individual.png" alt="">
               </div>
-              <p class="steps__item-text">Отборочный</p>
-              <h4 class="h4 steps__item-title">Индивидуальный</h4>
+              <div class="steps__item-head">
+                <p class="steps__item-name">Отборочный</p>
+                <h4 class="h4 steps__item-title">Индивидуальный</h4>
+              </div>
               <p>Выполняй тестовые задания, используй несколько попыток&nbsp;&mdash; лучшая пойдет в&nbsp;зачет!</p>
             </div>
             <div class="steps__item">
               <div class="steps__item-img">
-                <img src="images/team.png" alt="">
+                <img src="./images/team.png" alt="">
               </div>
-              <p class="steps__item-text">Отборочный</p>
-              <h4 class="h4 steps__item-title">Командный</h4>
+              <div class="steps__item-head">
+                <p class="steps__item-name">Отборочный</p>
+                <h4 class="h4 steps__item-title">Командный</h4>
+              </div>
               <p>Выполняй тестовые задания, используй несколько попыток&nbsp;&mdash; лучшая пойдет в&nbsp;зачет!</p>
             </div>
             <div class="steps__item">
               <div class="steps__item-img">
-                <img src="images/final.png" alt="">
+                <img src="./images/final.png" alt="">
               </div>
-              <p class="steps__item-text">Командный</p>
-              <h4 class="h4 steps__item-title">Финал</h4>
+              <div class="steps__item-head">
+                <p class="steps__item-name">Командный</p>
+                <h4 class="h4 steps__item-title">Финал</h4>
+              </div>
               <p>Прояви свою свои сильные стороны на&nbsp;реальный кейсах реальных компаний в&nbsp;условиях сильной конкуренции</p>
             </div>
           </div>
         </section>
 
-        <section class="section prep">
+        <section class="section prep" id="preparation">
           <h2 class="h2 prep__title">Подготовка</h2>
           <div class="prep__row">
             <div class="prep__item">
               <h3 class="prep__item-title h4">Площадки для&nbsp;подготовки</h3>
               <h4 class="prep__item-subtitle">Площадки для&nbsp;подготовки есть во&nbsp;многих крупных городах</h4>
-              <a href="#" class="prep__item-btn btn btn--hollow">Все площадки</a>
+              <a href="#" class="prep__item-btn btn btn--hollow" target="_blank">Все площадки</a>
             </div>
             <div class="prep__item">
               <h3 class="prep__item-title h4">Материалы для подготовки</h3>
               <h4 class="prep__item-subtitle">Мы&nbsp;собрали подготовочные материалы в&nbsp;одном месте</h4>
-              <a href="#" class="prep__item-btn btn btn--hollow">Материалы</a>
+              <a href="#" class="prep__item-btn btn btn--hollow" target="_blank">Материалы</a>
             </div>
             <div class="prep__item">
               <h3 class="prep__item-title h4">Сборники прошлых лет</h3>
               <h4 class="prep__item-subtitle">Учебные сборники прошлых лет, сгруппированы в&nbsp;одном месте</h4>
-              <a href="#" class="prep__item-btn btn btn--hollow">Сборники</a>
+              <a href="#" class="prep__item-btn btn btn--hollow" target="_blank">Сборники</a>
             </div>
             <div class="prep__item">
               <h3 class="prep__item-title h4">Курсы подготовки по&nbsp;технологиям НТИ</h3>
-              <a href="#" class="prep__item-btn btn btn--hollow">Курсы</a>
+              <a href="#" class="prep__item-btn btn btn--hollow" target="_blank">Курсы</a>
             </div>
           </div>
         </section>
 
-        <section class="section mentors">
+        <section class="section mentors" id="to-mentors-and-teachers">
           <h2 class="mentors__title h2">Для наставников и&nbsp;учителей</h2>
           <div class="mentors__row">
-            <img class="mentors__img" src="images/mentors.jpg" alt="" width="578px" height="552px">
+            <img class="mentors__img" src="./images/mentors.jpg" alt="" width="578px" height="552px">
             <div class="mentors__content">
               <div class="mentors__info">
                 <h2 class="mentors__info-title h2">Для наставников и&nbsp;учителей</h2>
@@ -196,8 +269,8 @@
                 <p>Вы&nbsp;сможете наблюдать за&nbsp;прогрессом как нескольких своих учеников, так и&nbsp;за&nbsp;большим количеством&nbsp;&mdash; платформа гибкая и&nbsp;позволяет делать это легко и&nbsp;быстро.</p>
               </div>
                 <div class="mentors__btns">
-                  <a href="#" class="mentors__btn btn">Стать наставником</a>
-                  <a href="#" class="mentors__btn btn btn--hollow">Возможности наставника</a>
+                  <a href="#" class="mentors__btn btn" target="_blank">Стать наставником</a>
+                  <a href="#" class="mentors__btn btn btn--hollow" target="_blank">Возможности наставника</a>
                 </div>
             </div>
         </div>
@@ -208,21 +281,21 @@
           <div class="extras__row">
             <div class="extras__item">
               <div class="extras__item-icon">
-                <img src="images/icon_green.svg" alt="" >
+                <img src="./images/icon_green.svg" alt="" >
               </div>
               <h4 class="h4 extras__item-title">Ты&nbsp;можешь пригласить наставника</h3>
               <p class="extras__item-text">Он&nbsp;будет следить за&nbsp;твоим прогрессом и&nbsp;поддерживать тебя на&nbsp;всех этапах</p>
             </div>
             <div class="extras__item">
               <div class="extras__item-icon">
-                <img src="images/icon_violet.svg" alt="" >
+                <img src="./images/icon_violet.svg" alt="" >
               </div>
               <h4 class="h4 extras__item-title">Бонусы для&nbsp;победителей прошлых олимпиад</h3>
               <p class="extras__item-text">Победители прошлых лет и&nbsp;других олимпиад могут пропустить отборочный индивидуальный этап и&nbsp;приступить к&nbsp;сразу к&nbsp;командному</p>
             </div>
             <div class="extras__item">
               <div class="extras__item-icon">
-                <img src="images/icon_blue.svg" alt="" >
+                <img src="./images/icon_blue.svg" alt="" >
               </div>
               <h4 class="h4 extras__item-title">Приглашай друзей и&nbsp;получи возможность выиграть приз</h3>
               <p class="extras__item-text">Ты&nbsp;можешь пригласить друга и&nbsp;поучаствовать в&nbsp;конкурсе за&nbsp;приз</p>
@@ -232,6 +305,34 @@
       </div>
 
     </main>
+
+    <div class="container">
+      <footer class="footer section">
+        <div class="footer__info">
+          <div class="footer__social social">
+            <h5>Мы в соцсетях</h5>
+            <div class="social__list">
+              <a href="" class="social__item" target="_blank"><img src="./images/icon-vk.svg" alt=""></a>
+              <a href="" class="social__item" target="_blank"><img src="./images/icon-fb.svg" alt=""></a>
+              <a href="" class="social__item" target="_blank"><img src="./images/icon-instagram.svg" alt=""></a>
+          </div>
+          </div>
+          <div class="footer__support">
+            <h5>Техническая поддержка</h5>
+            <a class="footer__support-mail" href="mailto:HELP@NTI-CONTEST.RU">HELP@NTI-CONTEST.RU</a>
+          </div>
+          <div class="footer__policy">
+            <a href="#" target="_blank">Политика конфиденциальности</a>
+            <a href="#" target="_blank">Политика обработки персональных данных</a>
+          </div>
+        </div>
+        <a href="#" target="_blank" class="footer__logo">
+          <img src="./images/icon-logo.svg" alt="">
+          <span>2021/22</span>
+        </a>
+      </footer>
+    </div>
+
   </body>
   <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

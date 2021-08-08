@@ -11,7 +11,7 @@
 
   &__content {
     position: relative;
-    max-width: 640px;
+    max-width: 660px;
   }
 
   &__headings {
@@ -26,7 +26,7 @@
 
   &__subtitle {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 0;
     width: 210px;
     line-height: 24px;
@@ -45,6 +45,9 @@
   }
 
   &__stage {
+    user-select: none;
+    pointer-events: none;
+
     &-lines {
       position: absolute;
       top: 0;
@@ -60,12 +63,56 @@
     }
   }
 
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 30px;
+  }
+
+  &__start {
+    position: relative;
+    color: #A6C4FE;
+    margin-bottom: 0;
+    padding-left: 80px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 48px;
+      height: 31px;
+      margin: auto;
+      background-image: url("../images/hero_arrow.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   @media (max-width: @screen-md-max) {
     background-position: right 10% top 50%;
 
     &__content {
       max-width: 540px;
       margin-right: 50px;
+    }
+
+    &__subtitle {
+      right: 0;
+    }
+
+    &__footer {
+      max-width: 370px;
+      display: block;
+    }
+
+    &__btn {
+      margin-bottom: 23px;
     }
   }
 
@@ -98,6 +145,7 @@
     &__btn {
       width: 100%;
       max-width: 350px;
+      margin-right: 30px;
     }
 
     &__stage {
@@ -126,6 +174,18 @@
 
       &-logo {
         max-width: 287px;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs) {
+    &__start {
+      padding-left: 55px;
+
+      &::before {
+        width: 33px;
+        height: 31px;
+        background-position: right center;
       }
     }
   }

@@ -1,4 +1,5 @@
 .steps {
+  counter-reset: step;
 
   &__row {
     display: flex;
@@ -7,6 +8,39 @@
 
   &__item {
     flex-basis: 30%;
+
+    &-head {
+      position: relative;
+      padding-left: 85px;
+
+      &::before {
+        color: @primary-900;
+        counter-increment: step;
+        content: counter(step);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 600;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-color: #15D860;
+      }
+    }
+
+    &:nth-child(2) &-head::before {
+      background-color: #C237F2;
+    }
+
+    &:nth-child(3) &-head::before {
+      background-color: @accent-color;
+    }
 
     &-img {
       display: flex;
@@ -20,8 +54,8 @@
       }
     }
 
-    &-text {
-      margin-bottom: 0;
+    &-name {
+      margin-bottom: 3px;
     }
   }
 
