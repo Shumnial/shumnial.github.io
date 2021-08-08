@@ -1,0 +1,40 @@
+.prep {
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: calc(50% - 40px);
+    padding: 35px 40px;
+    background-color: @primary-800;
+    margin: 20px;
+
+    &-subtitle {
+      margin-bottom: 1.5em;
+    }
+
+    &-btn {
+      padding: 0 65px;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__row {
+      display: block;
+      margin: 0;
+    }
+
+    &__item {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

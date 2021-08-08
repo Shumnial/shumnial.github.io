@@ -1,0 +1,43 @@
+.extras {
+  
+  &__title {
+    margin-bottom: 1.25em;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 27%;
+
+    &-icon {
+      display: flex;
+      width: 102px;
+      height: 102px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: @screen-md-max) {
+    &__item {
+      flex-basis: 30%;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__row {
+      display: block;
+    }
+
+    &__item {
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

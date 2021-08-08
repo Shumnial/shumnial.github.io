@@ -1,0 +1,75 @@
+.mentors {
+
+  &__title {
+    display: none;
+  }
+  
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    order: 1;
+    max-width: 50%;
+    height: auto;
+  }
+
+  &__content {
+    margin-right: 55px;
+  }
+
+  &__info {
+    margin-bottom: 60px;
+
+    p {
+      margin-bottom: 1.5em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+
+  &__btn {
+    flex-grow: 1;
+    margin: 10px;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__title {
+      display: block;
+    }
+
+    &__row {
+      display: block;
+    }
+
+    &__content {
+      margin-right: 0;
+    }
+
+    &__info {
+      &-title {
+        display: none;
+      }
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    &__info {
+      margin-bottom: 40px;
+    }
+  }
+}

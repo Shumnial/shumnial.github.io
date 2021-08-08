@@ -1,0 +1,69 @@
+// base variables
+@system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+@base-font: "Proxima Nova", Segoe UI, SegoeUI, "wf_segoe-ui", Tahoma,
+  Verdana, Arial, sans-serif;
+@base-font-size: 18px;
+@base-font-weight: 400;
+@base-line-height: 1.4;
+@base-color: @primary-50;
+@base-bg-color: @primary-900;
+@base-box-model: border-box;
+
+// color definitions
+@primary-900: #00041e;
+@primary-800: #000A2E;
+@primary-200: #5E94FF;
+@primary-100: #8EB5FF; // also use it instead of #9CBDFD, #A6C4FE
+@primary-50: #C7DAFF;
+
+@accent-color: #0056FF;
+
+// etc...
+
+// typography
+@link-color: @primary-100;
+
+// media query brakepoints
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+@screen-lg: 1280px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+@screen-xl: 1600px;
+@screen-xl-min: @screen-xl;
+@screen-xs-max: (@screen-sm-min - 1); // 768px;
+@screen-sm-max: (@screen-md-min - 1); // 992px;
+@screen-md-max: (@screen-lg-min - 1); // 1280px;
+@screen-lg-max: (@screen-xl-min - 1);
+
+// grid settings
+@grid-gutter-width: 40px;
+@grid-outer-margin: 20px;
+
+@container-tablet: (720px + @grid-gutter-width);
+@container-sm: @container-tablet;
+@container-desktop: (940px + @grid-gutter-width);
+@container-md: @container-desktop;
+@container-large-desktop: (1196px + @grid-gutter-width);
+@container-lg: @container-large-desktop;
+
+@section-offset: 50px;
+
+//typography
+
+@headers-lh: 1.24;
+@headers-mb: 1.24;
+@headings-margin-bottom: 0.75em;
+@paragraph-margin-bottom: 0.75em;
+
+@h1-fz: 40px;
+@h2-fz: 32px;
+@h3-fz: 24px;
+@h4-fz: 18px;

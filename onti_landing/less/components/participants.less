@@ -1,0 +1,49 @@
+.participants {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  &__item {
+    width: 425px;
+    // flex-shrink: 0;
+    height: 410px;
+    margin: 20px;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url("/images/punched-card1.svg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("/images/punched-card2.svg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("/images/punched-card3.svg");
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: @screen-md-max) {
+    &__item {
+      &:nth-child(3) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__item {
+      width: 336px;
+      height: 330px;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    &__row {
+      justify-content: center;
+    }
+  }
+}
